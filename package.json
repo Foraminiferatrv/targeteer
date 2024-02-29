@@ -1,0 +1,45 @@
+{
+  "name": "targeteer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate:latest": "tsx ./src/lib/db/migrate-to-latest.ts",
+    "kysely:inspect": "kysely-codegen --out-file ./src/schemas/db.schema.d.ts"
+  },
+  "dependencies": {
+    "@auth/kysely-adapter": "^0.4.3",
+    "@lucia-auth/adapter-postgresql": "^3.1.0",
+    "@next/env": "^14.1.0",
+    "@reduxjs/toolkit": "^2.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/pg": "^8.11.0",
+    "dotenv": "^16.4.3",
+    "kysely": "^0.27.2",
+    "kysely-codegen": "^0.11.0",
+    "lucia": "^3.0.1",
+    "next": "14.1.0",
+    "pg": "^8.11.3",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.50.1",
+    "react-redux": "^9.1.0",
+    "react-toastify": "^10.0.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
